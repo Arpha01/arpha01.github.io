@@ -1,0 +1,15 @@
+.overlaps {
+    top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .overlaps {
+        top: -40px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .overlaps {
+        top: -40px;
+    }
+}

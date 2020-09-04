@@ -1,0 +1,56 @@
+<nav class="flex items-center justify-between flex-wrap bg-white p-6 shadow-md font-quicksand" #navbar>
+  <div class="flex items-center flex-shrink-0 text-gray-500 mr-6">
+    <a routerLink="/" class="font-bold ml-2 text-black tracking-wider">
+        <img src="assets/images/logo.svg" alt="" width="20" class="float-left mb-1"><span class="ml-2"> ArphaInteractive</span>
+    </a>
+  </div>
+  <div class="block lg:hidden">
+    <button class="flex items-center px-3 py-2 border rounded text-gray-400 border-teal-400 hover:text-gray-500 hover:border-white burger"
+    (click)="toggle()">
+      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <title>Menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+      </svg>
+    </button>
+  </div>
+  <div class="w-full menu hidden sm:hidden lg:block md:block flex-grow lg:flex lg:items-center lg:w-auto" [ngClass]="{'nav-show': toggleNav}">
+    <div class="text-sm lg:flex-grow"></div>
+    <div>
+      <ul class="flex flex-col md:flex-row lg:flex-row">
+        <li class="mr-4 dropdown">
+          <a href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-600 mr-4 dropdown">
+            Download<i class="fas fa-angle-down ml-2"></i>
+          </a>
+          <ul class="dropdown-menu absolute bg-white shadow hidden text-gray-700 rounded pt-1">
+            <li class=""><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="index.html">WaktuShalat</a></li>
+            <li class=""><a class="hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="winnetmeter.html">WinNetMeter</a></li>
+            <li class=""><a class="hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">QRCode
+                Generator</a></li>
+            <li class=""><a class="rounded-b hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="#">ChecksumCheck</a></li>
+          </ul>
+        </li>
+        <li class="mr-4">
+          <a href="http://arpha01.blogspot.com"
+            class="block mt-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-600 mr-4">
+            Blog
+          </a>
+        </li>
+        <li class="mr-4">
+          <a routerLink="/about"
+            class="block mt-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-600 mr-4">
+            About
+          </a>
+        </li>
+        <li class="mr-4">
+          <a href="#" class="inline-block text-sm px-4 py-2 leading-none bg-orange-700 shadow
+                        rounded-lg text-white hover:bg-orange-600 mt-4 lg:mt-0 font-bold"><i
+              class="fas fa-mug-hot"></i> Donate</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,52 @@
+html, body{
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+hr {
+    border-width: 1px;
+}
+
+@media only screen and (min-width: 400px) {
+  .navbar-fixed {
+    top: 0;
+    z-index: 100;
+  	position: fixed;
+    width: 100%;
+    animation: smoothScroll 0.3s forwards;
+  } 
+}
+
+.card {
+  opacity: 0;
+  animation-duration: 3s;
+}
+
+
+@media only screen and (min-width: 1024px){
+  a.active{
+      border-bottom: 4px solid #63b3ed;
+      color: #63b3ed;
+      font-weight: bold;
+  }
+  
+}
+
+
+.wrapper {
+  height: auto !important;
+  min-height: 100%;
+}
+
+.project {
+  font-family: 'Bad Script';
+}
+
+app-gallerize {
+  width: 100%;
+}

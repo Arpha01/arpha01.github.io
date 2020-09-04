@@ -1,0 +1,38 @@
+<nav class="flex items-center justify-between flex-wrap bg-white shadow font-quicksand" #navbar>
+    <div class="flex items-center flex-shrink-0 text-gray-900 mr-6 pl-3 py-2">
+        <a routerLink="/" class="font-bold ml-2 text-black tracking-wider">
+            <img src="assets/images/logo.svg" alt="" width="20" class="float-left mb-1"><span class="ml-2"> ArphaInteractive</span>
+        </a>
+    </div>
+    <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 mr-2 border rounded text-teal-200 border-teal-400 hover:text-gray-400 hover:border-white burger"
+        (click)="toggle()">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+        </button>
+    </div>
+    <div class="w-full hidden md:block flex-grow lg:flex lg:items-center lg:w-auto" id="menu" [ngClass]="{'nav-show': toggleNav}">
+        <div class="text-sm ml-auto">
+            <div class="text-sm lg:flex-grow md:ml-4 lg:ml-4">
+                <a href="#" class="nav-item block lg:inline-block lg:mt-0 text-gray-500 py-4 md:py-6 lg:py-6 px-4 hover:text-gray-600 lg:border-b-4 border-transparent hover:border-blue-400 active"
+                onclick="document.querySelector('#profile').scrollIntoView(); event.preventDefault();" [ngClass]="{ 'active': activeSection == 'Profile' }">
+                    Profile
+                </a>
+                <a href="#" class="nav-item block lg:inline-block lg:mt-0 text-gray-500 py-4 md:py-6 lg:py-6 px-4 hover:text-gray-600 lg:border-b-4 border-transparent hover:border-blue-400"
+                onclick="document.querySelector('#education').scrollIntoView(); event.preventDefault();" [ngClass]="{ 'active': activeSection == 'Education' }">
+                    Education
+                </a>
+                <a href="#" class="nav-item block lg:inline-block lg:mt-0 text-gray-500 py-4 md:py-6 lg:py-6 px-4 hover:text-gray-600 lg:border-b-4 border-transparent hover:border-blue-400
+                md:mr-2 lg:mr-2" onclick="document.querySelector('#portofolio').scrollIntoView(); event.preventDefault();" [ngClass]="{ 'active': activeSection == 'Portofolio' }">
+                    Portofolio
+                </a>
+                <a href="https://drive.google.com/file/d/1L-LW9HfRPHH56WLGF9w58jv_CJ5cHTqT/view?usp=sharing" target="_blank" class="px-3 py-2 ml-3 md:ml-0 lg:ml-0 
+                md:mr-6 lg:mr-6 mb-4 bg-blue-400 hover:bg-blue-500 text-white rounded-lg shadow">
+                    <i class="fas fa-file-download pr-1"></i> My CV
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>

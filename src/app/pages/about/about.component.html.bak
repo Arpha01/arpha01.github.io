@@ -1,0 +1,246 @@
+<div class="flex flex-wrap w-full px-8 profile bg-gray-100" #myprofile>
+    <div class="md:w-1/2 lg:w-1/2 flex flex-col px-4 py-6">
+        <p>Halo, Nama Saya</p>
+        <p class="text-4xl font-bold tracking-wider">Muhammad Arfan</p>
+        <hr class="border-b-4 border-blue-500 w-20 rounded-sm my-2">
+        <p class="text-gray-800 text-base mt-4">
+            Bercita-cita ingin menjadi seorang developer professional.
+            Menargetkan menguasai cross-platform development, 
+            dan sangat gemar mempelajari hal baru seputar teknologi
+        </p>
+        <div class="mt-32">
+            <a href="https://drive.google.com/file/d/1L-LW9HfRPHH56WLGF9w58jv_CJ5cHTqT/view?usp=sharing" target="_blank" class="px-3 py-2 mr-6 bg-blue-500 hover:bg-blue-600 text-white rounded-lg shadow-lg">
+                <i class="far fa-file-alt"></i><span class="ml-2">View My CV</span>
+            </a>
+        </div>
+        <div class="mt-4 py-4">
+            <p class="font-semibold text-gray-800">Find Me on :</p>
+            <div class="flex flex-wrap text-gray-800 py-2">
+                <a href="https://github.com/Arpha01" target="_blank" class="hover:text-black pr-2">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://facebook.com/Arpha01" target="_blank" class="hover:text-black px-2">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://t.me/Arpha01" target="_blank" class="hover:text-black px-2">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/muchammad-a-266460118/" class="hover:text-black pl-2">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="flex md:w-1/2 lg:w-1/2 items-end float-right">
+        <img src="assets/images/back.png" alt="" class="w-full" loading="lazy">
+    </div>
+</div>
+<div class="flex flex-col w-full h-auto items-center px-20 md:px-24 lg:px-28" id="profile">
+    <h2 class="text-3xl mt-10 font-semibold text-gray-800">About Me</h2>
+    <hr class="my-2 border-b-2 border-blue-500 w-32">
+    <img src="assets/images/lowres.jpg" alt="" class="mt-8 rounded-full h-24 w-24 object-cover">
+    <div class="text-center md:px-32 lg:px-32">
+        <p class="py-3 text-gray-800">
+            Halo, Nama Saya Muhammad Arfan, Seorang Tech Enthusiast, Freelance Full Stack Web Developer, Desktop App Programmer dan mahasiswa di Universitas Pamulang jurusan Teknik Informatika.
+        </p>
+        <p class="font-semibold text-lg">Detail Personal</p>
+        <div class="flex flex-wrap mb-8">
+            <div class="flex flex-col md:w-1/2 lg:w-1/2 text-sm text-left">
+                <div class="inline my-2">
+                    <i class="fas fa-map-marker-alt mr-2"></i><span class="font-semibold">Alamat Tempat tinggal</span>
+                    <p>JL.IR.H.Juanda(komplek percetakan ALS)
+                        Kel. Cipayung Kec. Ciputat, Kota Tangerang Selatan</p>
+                </div>
+                <div class="inline my-2">
+                    <i class="far fa-calendar mr-2"></i><span class="font-semibold">Tempat Tanggal lahir</span>
+                    <p>Cirebon, 27 Juni 1999</p>
+                </div>
+                <div class="inline my-2">
+                    <i class="fas fa-mosque mr-2"></i><span class="font-semibold">Agama</span>
+                    <p>ISLAM</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:w-1/2 lg:w-1/2 text-sm text-left">
+                <div class="inline my-2 md:ml-32 lg:ml-32">
+                    <i class="far fa-envelope mr-2"></i><span class="font-semibold">Email</span>
+                    <p>muchammadarfan76@gmail.com</p>
+                </div>
+                <div class="inline my-2 md:ml-32 lg:ml-32">
+                    <i class="fas fa-code mr-2"></i><span class="font-semibold">Hobbies</span>
+                    <br><div class="mt-2"></div>
+                    <span class="px-2 py-1 rounded bg-gray-200">Coding</span>
+                    <span class="px-2 py-1 rounded bg-gray-200">Browsing</span>
+                </div>
+                <div class="inline my-2 md:ml-32 lg:ml-32">
+                    <i class="fas fa-phone-alt mr-2"></i><span class="font-semibold">Nomor HP</span>
+                    <p>+6282321158479</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="flex flex-col w-full h-auto items-center bg-gray-100" id="education" #myeducation>
+    <h2 class="text-3xl mt-10 font-semibold text-gray-800">Education</h2>
+    <hr class="my-2 border-b-2 border-blue-500 w-32">
+    <div class="ml-3 mt-10 w-2/3 md:w-1/3 lg:w-1/3 rounded shadow border border-1 bg-white">
+        <div class="px-4 py-4">
+            <p class="text-xl">SMP Islamiyah Ciputat</p>
+            <p class="text-gray-500 text-sm mt-1">
+                2011-2014
+            </p>
+        </div>
+    </div>
+    <div class="ml-3 mt-10 w-2/3 md:w-1/3 lg:w-1/3 rounded shadow border border-1 bg-white">
+        <div class="px-4 py-4">
+            <p class="text-xl">SMK Islamiyah Ciputat</p>
+            <p class="text-gray-800">Teknik Komputer Dan Jaringan</p>
+            <p class="text-gray-500 text-sm mt-1">
+                2014-2017
+            </p>
+        </div>
+    </div>
+    <div class="ml-3 mt-10 mb-6 w-2/3 md:w-1/3 lg:w-1/3 rounded shadow border border-1 bg-white">
+        <div class="px-4 py-4">
+            <p class="text-xl">Universitas Pamulang</p>
+            <p class="text-gray-800">Teknik Informatika</p>
+            <p class="text-gray-500 text-sm mt-1">
+                2017-Sekarang
+            </p>
+        </div>
+    </div>
+</div>
+<div class="flex flex-col w-full h-auto pb-10" id="portofolio" #myportofolio>
+    <div class="self-center">
+        <h2 class="text-3xl mt-10 font-semibold text-gray-800">Portofolio</h2>
+        <hr class="my-2 border-b-2 border-blue-500 w-32">
+    </div>
+    <div class="w-full flex mt-12 px-6 border-b border-gray-400">
+        <a *ngFor="let tab of Tabs" class="btn-tabitem bg-transparent px-2 py-3 focus:outline-none mr-2 cursor-pointer hover:bg-gray-200" (click)="toggleTab(tab.id)"
+        [ngClass]="{ 'active': Tabs[tab.id - 1].toggle }">
+            {{ tab.name }}
+        </a>
+    </div>
+    <div class="flex flex-wrap bg-gray-100 justify-center py-10">
+        <div class="flex flex-wrap py-4 items-center" [ngClass]="{ 'hidden': !Tabs[0].toggle }" [@showHide]="Tabs[0].toggle ? 'show' : 'hide'">
+            <div class="project-content flex flex-col md:m-3 lg:m-3 mx-auto ml-2 bg-white items-center px-8 py-8 h-auto shadow-lg hover:shadow-xl border border-gray-100 rounded">
+                <div class="flex">
+                    <img src="assets/images/quran.svg" alt="" width="35" class="float-left">
+                    <p class="px-2 mt-2">KBM <span class="project">Project</span></p>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="text-gray-600 text-sm">Email: admin@mail.com</p>
+                    <p class="text-gray-600 mb-4 text-sm">Password: admin123</p>
+                    <a href="http://kbmproject.herokuapp.com/admin/login" target="_blank" class="px-3 py-2 border border-blue-500 text-blue-500 rounded hover:border-blue-800 hover:text-blue-800">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-content flex flex-col md:m-3 lg:m-3 mx-auto ml-2 bg-white items-center px-8 py-8 h-auto shadow-lg hover:shadow-xl border border-gray-100 rounded">
+                <div class="flex">
+                    <img src="assets/images/tutwuri.png" alt="" width="35" class="float-left">
+                    <p class="px-2 mt-2">PPDB Project</p>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="text-gray-600 text-sm">Email: admin@mail.com</p>
+                    <p class="text-gray-600 mb-4 text-sm">Password: admin123</p>
+                    <a href="http://ppdb-smk.herokuapp.com" target="_blank" class="px-3 py-2 border border-blue-500 text-blue-500 rounded hover:border-blue-800 hover:text-blue-800 mb-10">Live Demo</a>
+                </div>
+            </div>
+        </div>
+        <!-- Desktop app -->
+        <div class="flex flex-wrap py-4 items-center" [ngClass]="{ 'hidden': !Tabs[1].toggle }" [@showHide]="Tabs[1].toggle ? 'show' : 'hide'">
+            <div class="project-content flex flex-col md:m-3 lg:m-3 mx-auto my-2 bg-white items-center px-8 py-8 h-auto shadow-lg hover:shadow-xl border 
+            border-gray-100 rounded">
+                <div class="flex">
+                    <img src="assets/images/winnetmeterlogo.svg" alt="" width="35" class="float-left">
+                    <p class="px-2 mt-2">WinNetMeter</p>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="text-gray-600 mb-8 text-sm">Windows 7/8.1/10 x86 Dan x64</p>
+                    <a href="https://github.com/WinTenDev/WinNetMeter/releases" target="_blank" class="px-3 py-2 border border-blue-500 text-blue-500 rounded 
+                    hover:border-blue-800 hover:text-blue-800">
+                        Download
+                    </a>
+                </div>
+            </div>
+            <div class="project-content flex flex-col md:m-3 lg:m-3 mx-auto my-2 bg-white items-center px-8 py-8 h-auto shadow-lg hover:shadow-xl border border-gray-100 rounded">
+                <div class="flex">
+                    <img src="assets/images/QR.svg" alt="" width="35" class="float-left">
+                    <p class="px-2 mt-2">QRCode Generator</p>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="text-gray-600 mb-8 text-sm">Windows 7/8.1/10 x86 Dan x64</p>
+                    <a href="https://github.com/WinTenDev/QRCode.Generator/releases" target="_blank" class="px-3 py-2 border border-blue-500 text-blue-500 rounded 
+                    hover:border-blue-800 hover:text-blue-800 mb-10">Download</a>
+                </div>
+            </div>
+            <div class="project-content flex flex-col md:m-3 lg:m-3 mx-auto my-2 bg-white items-center px-8 py-8 h-auto shadow-lg hover:shadow-xl border border-gray-100 rounded">
+                <div class="flex">
+                    <img src="assets/images/checksumcheck_logo.svg" alt="" width="35" class="float-left">
+                    <p class="px-2 mt-2">ChecksumCheck</p>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="text-gray-600 mb-8 text-sm">Windows 7/8.1/10 x86 Dan x64</p>
+                    <a href="https://github.com/WinTenDev/ChecksumCheck/releases" target="_blank" class="px-3 py-2 border border-blue-500 text-blue-500 rounded 
+                    hover:border-blue-800 hover:text-blue-800 mb-10">Download</a>
+                </div>
+            </div>
+            <div class="project-content flex flex-col md:m-3 lg:m-3 mx-auto my-2 bg-white items-center px-8 py-8 h-auto shadow-lg hover:shadow-xl border border-gray-100 rounded">
+                <div class="flex">
+                    <img src="assets/images/waktushalat_logo.jpg" alt="" width="35" class="float-left">
+                    <p class="px-2 mt-2">WaktuShalat</p>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="text-gray-600 mb-8 text-sm">Windows 7/8.1/10 x86 Dan x64</p>
+                    <a href="#" target="_blank" class="px-3 py-2 border border-blue-500 text-blue-500 rounded 
+                    hover:border-blue-800 hover:text-blue-800 mb-10 cursor-not-allowed opacity-50">Coming soon</a>
+                </div>
+            </div>
+        </div>
+        <div class="py-4" [ngClass]="{ 'hidden': !Tabs[2].toggle }" [@showHide]="Tabs[2].toggle ? 'show' : 'hide'" #designTab>
+
+        </div>
+        <div class="flex flex-wrap py-4" [ngClass]="{ 'hidden': !Tabs[3].toggle }" [@showHide]="Tabs[3].toggle ? 'show' : 'hide'">
+            <div class="project-content flex flex-col bg-white items-center px-8 py-8 h-auto shadow-lg hover:shadow-xl border border-gray-100 rounded m-3">
+                <div class="flex">
+                    <img src="assets/images/quran.svg" alt="" width="35" class="float-left">
+                    <p class="px-2 mt-2">KBM <span class="project">Project</span></p>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="text-gray-600 text-sm">Email: admin@mail.com</p>
+                    <p class="text-gray-600 mb-4 text-sm">Password: admin123</p>
+                    <a href="http://kbmproject.herokuapp.com/admin/login" target="_blank" class="px-3 py-2 border border-blue-500 text-blue-500 rounded hover:border-blue-800 hover:text-blue-800">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-content flex flex-col bg-white items-center px-8 py-8 h-auto shadow-lg hover:shadow-xl border border-gray-100 rounded m-3">
+                <div class="flex">
+                    <img src="assets/images/tutwuri.png" alt="" width="35" class="float-left">
+                    <p class="px-2 mt-2">PPDB Project</p>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="text-gray-600 text-sm">Email: admin@mail.com</p>
+                    <p class="text-gray-600 mb-4 text-sm">Password: admin123</p>
+                    <a href="http://ppdb-smk.herokuapp.com" target="_blank" class="px-3 py-2 border border-blue-500 text-blue-500 rounded hover:border-blue-800 hover:text-blue-800 mb-10">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="flex flex-col w-full h-auto items-center bg-white" id="skills" #myskills>
+    <h2 class="text-3xl mt-10 font-semibold text-gray-800">Skills</h2>
+    <hr class="my-2 border-b-2 border-blue-500 w-32">
+    <h2 class="text-3xl my-10">This section is under construction</h2>
+    <!-- <div class="mt-8 w-full px-4 self-start">
+        <p class="font-semibold">Experienced with</p>
+        <hr class="my-2 border border-gray-300 w-full">
+        <div class="flex w-full justify-between">
+            <div class="w-64 px-2">
+                <img src="images/laravel.png" alt="" class="float-left w-10">
+                <p class="font-semibold ml-12">Laravel</p>
+                <p class="text-gray-800 text-sm ml-12">Approx. 1 Year</p>
+            </div>
+            <div class="w-64 px-2">
+                <img src="images/php_logo.svg" alt="" class="float-left w-10">
+                <p class="font-semibold ml-12">PHP</p>
+            </div>
+        </div>
+    </div>    -->
+</div>

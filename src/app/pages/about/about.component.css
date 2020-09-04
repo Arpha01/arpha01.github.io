@@ -1,0 +1,9 @@
+.btn-tabitem.active {
+    border-bottom: 3px solid #63b3ed;
+    color: #63b3ed;
+    font-weight: bold;
+}
+
+.show {
+    display: block !important;
+}
