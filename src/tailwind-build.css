@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Nunito&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap');
 
 @import '~animate.css/animate.min';
 
@@ -7,6 +7,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
 
 @import "~@angular/cdk/overlay-prebuilt.css";
+
+@import '~@swimlane/ngx-datatable/index.css';
+@import 'assets/styles/material.css';
+@import '~@swimlane/ngx-datatable/assets/icons.css';
+
 
 @tailwind base;
 

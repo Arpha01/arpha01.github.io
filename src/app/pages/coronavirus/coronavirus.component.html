@@ -1,0 +1,58 @@
+<div class="flex flex-col h-auto w-full text-center bg-gray-100">
+    <div class="px-2 py-5">
+        <h1 class="text-3xl">Pantau Jumlah Kasus Penyebaran Virus Corona Di Indonesia</h1>
+    </div>
+    <div class="flex flex-wrap pb-5 justify-center text-left" *ngIf="indonesianCases">
+        <div class="flex flex-col card animate__animated animate__fadeInUp
+        bg-white ml-3 mt-10 max-w-sm w-64 rounded-md shadow-md border border-1">
+            <div class="px-6 py-4">
+                <img src="assets/images/sad.png" alt="" class="w-16 float-right">
+                <p class="font-bold text-xl">Positif</p>
+                <p id="positif">{{ indonesianCases.cases }}</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col card animate__animated animate__fadeInUp
+        bg-white ml-3 mt-10 max-w-sm w-64 rounded-md shadow-md border border-1">
+            <div class="px-6 py-4">
+                <img src="assets/images/sadness.png" alt="" class="w-16 float-right">
+                <p class="font-bold text-xl">Meninggal</p>
+                <p id="meninggal">{{ indonesianCases.deaths }}</p>
+            </div>
+        </div>
+        <div class="flex flex-col card animate__animated animate__fadeInUp
+        bg-white ml-3 mt-10 max-w-sm w-64 rounded-md shadow-md border border-1">
+            <div class="px-6 py-4">
+                <img src="assets/images/smile.png" alt="" class="w-16 float-right">
+                <p class="font-bold text-xl">Sembuh</p>
+                <p id="sembuh">{{ indonesianCases.recovered }}</p>
+            </div>
+        </div>
+        <div class="flex flex-col card animate__animated animate__fadeInUp
+        bg-white ml-3 mt-10 max-w-sm w-64 rounded-md shadow-md border border-1">
+            <div class="px-6 py-4">
+                <img src="assets/images/heart.svg" alt="" class="w-16 float-right">
+                <p class="font-bold text-xl">Dalam Perawatan</p>
+                <p id="perawatan">{{ indonesianCases.active }}</p>
+            </div>
+        </div>
+    </div>
+    <p class="self-end text-sm text-gray-600 py-4 mr-2" *ngIf="indonesianCases">Diupdate pada : {{ translateToDate(indonesianCases.updated) }}</p>
+</div>
+<div class="flex h-auto w-full pt-10">
+    <div class="px-10 w-full">
+        <div class="flex flex-wrap">
+            <h1 class="text-2xl">Jumlah Kasus Penyebaran di Dunia</h1>
+            <div class="relative md:ml-auto lg:ml-auto mb-6">
+                <i class="fas fa-search absolute top-0 mt-3 ml-3 left-0 text-gray-700"></i>
+                <input type="text" class="border bg-gray-200 px-10 py-2 focus:outline-none focus:border-blue-500 rounded text-sm" name="search" id="search" 
+                (keyup)="filter($event)" placeholder="Cari">
+            </div>
+        </div>
+        <ngx-datatable class="w-full mb-6 material" *ngIf="dtRows.length > 0" [rows]="dtRows" [columns]="dtColumns" [limit]="10"
+        [headerHeight]="50" [footerHeight]="50" rowHeight="auto" [columnMode]="dtColumnMode.force" [sorts]="[{ prop: 'Positif', dir: 'desc' }]" #covidTable>
+
+        </ngx-datatable>
+
+    </div>
+</div>

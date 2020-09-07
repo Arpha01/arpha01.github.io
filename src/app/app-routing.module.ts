@@ -5,6 +5,9 @@ import { GeneralLayoutComponent } from './layouts/general-layout/general-layout.
 import { AboutLayoutComponent } from './layouts/about-layout/about-layout.component';
 import { AboutComponent } from './pages/about/about.component';
 import { GallerizeComponent } from './pages/gallerize/gallerize.component';
+import { WinnetmeterComponent } from './pages/winnetmeter/winnetmeter.component';
+import { QrcodeComponent } from './pages/qrcode/qrcode.component';
+import { CoronavirusComponent } from './pages/coronavirus/coronavirus.component';
 
 
 const routes: Routes = [
@@ -16,6 +19,18 @@ const routes: Routes = [
         'path': '',
         'component': HomeComponent,
         'pathMatch': 'full'
+      },
+      {
+        'path': 'projects/winnetmeter',
+        'component': WinnetmeterComponent,
+      },
+      {
+        'path': 'projects/qrcode',
+        'component': QrcodeComponent
+      },
+      {
+        'path': 'covid-19',
+        'component': CoronavirusComponent
       }
     ]
   },

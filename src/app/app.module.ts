@@ -14,6 +14,12 @@ import { GalleryModule, GALLERY_CONFIG } from 'ng-gallery';
 import { LightboxModule, LIGHTBOX_CONFIG } from 'ng-gallery/lightbox';
 import { GallerizeComponent } from './pages/gallerize/gallerize.component';
 import * as Hammer from 'hammerjs';
+import { WinnetmeterComponent } from './pages/winnetmeter/winnetmeter.component';
+import { QrcodeComponent } from './pages/qrcode/qrcode.component';
+import { CoronavirusComponent } from './pages/coronavirus/coronavirus.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { ChecksumcheckComponent } from './pages/checksumcheck/checksumcheck.component';
 
 @Injectable()
 export class MyHammerConfig extends HammerGestureConfig {
@@ -35,7 +41,11 @@ export class MyHammerConfig extends HammerGestureConfig {
     GeneralLayoutComponent,
     AboutLayoutComponent,
     AboutNavbarComponent,
-    GallerizeComponent
+    GallerizeComponent,
+    WinnetmeterComponent,
+    QrcodeComponent,
+    CoronavirusComponent,
+    ChecksumcheckComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +56,9 @@ export class MyHammerConfig extends HammerGestureConfig {
       dots: true
     }),
     LightboxModule,
-    HammerModule
+    HammerModule,
+    HttpClientModule,
+    NgxDatatableModule
   ],
   providers: [
     {

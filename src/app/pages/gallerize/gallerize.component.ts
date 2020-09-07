@@ -22,6 +22,8 @@ export class GallerizeComponent implements OnInit {
       thumb: false,
     })
 
+    console.log(this.assetsPath);
+
     this.images = [
       new ImageItem({
         'src': `${this.assetsPath}/waktushalat_welcome_material-min.png`,

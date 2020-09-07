@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Nunito&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap');
 
 @import '~animate.css/animate.min';
 
@@ -7,6 +7,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
 
 @import "~@angular/cdk/overlay-prebuilt.css";
+
+@import '~@swimlane/ngx-datatable/index.css';
+
+@import 'assets/styles/material.css';
+
+@import '~@swimlane/ngx-datatable/assets/icons.css';
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -10089,6 +10095,10 @@ video {
 
 .font-quicksand{
   font-family: Quicksand;
+}
+
+.font-kumbh{
+  font-family: Kumbh Sans;
 }
 
 .font-hairline{
@@ -30580,6 +30590,10 @@ video {
     font-family: Quicksand;
   }
 
+  .sm\:font-kumbh{
+    font-family: Kumbh Sans;
+  }
+
   .sm\:font-hairline{
     font-weight: 100;
   }
@@ -51002,6 +51016,10 @@ video {
 
   .md\:font-quicksand{
     font-family: Quicksand;
+  }
+
+  .md\:font-kumbh{
+    font-family: Kumbh Sans;
   }
 
   .md\:font-hairline{
@@ -71428,6 +71446,10 @@ video {
     font-family: Quicksand;
   }
 
+  .lg\:font-kumbh{
+    font-family: Kumbh Sans;
+  }
+
   .lg\:font-hairline{
     font-weight: 100;
   }
@@ -91850,6 +91872,10 @@ video {
 
   .xl\:font-quicksand{
     font-family: Quicksand;
+  }
+
+  .xl\:font-kumbh{
+    font-family: Kumbh Sans;
   }
 
   .xl\:font-hairline{

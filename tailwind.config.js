@@ -11,7 +11,8 @@ module.exports = {
     fontFamily: {
       'nunito': ['Nunito Sans'],
       'helvetica': ['Helvetica'],
-      'quicksand': ['Quicksand']
+      'quicksand': ['Quicksand'],
+      'kumbh': ['Kumbh Sans']
     }
   },
   variants: {},

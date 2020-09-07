@@ -11,16 +11,13 @@ import { SectionService } from 'src/app/services/section.service';
       transition('hide <=> show', [
         style({ transform: 'translateX(-100%)' }),
         animate('400ms ease-out', style({ transform: 'translateX(0%)' }))
-      ]),
-      // transition('show => hide', [
-      //   animate('300ms ease-out', style({ transform: 'translateX(-100%)' }))
-      // ])
+      ])
     ])
   ]
 })
 export class AboutComponent implements OnInit {
 
-  @ViewChild('designTab', {read: ViewContainerRef}) designContainer: ViewContainerRef;
+  @ViewChild('designTab', { read: ViewContainerRef }) designContainer: ViewContainerRef;
 
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
 
@@ -51,11 +48,11 @@ export class AboutComponent implements OnInit {
 
   @HostListener('window:scroll', ['onWindowScroll($event)'])
   onWindowScroll(event) {
-    if(window.pageYOffset >= 0 && window.pageYOffset < 1014) {
+    if(window.pageYOffset >= 0 && window.pageYOffset < 1876) {
       this.sectionService.setActiveSection('Profile');
-    } else if(window.pageYOffset >= 1014 && window.pageYOffset < 1586) {
+    } else if(window.pageYOffset >= 1876 && window.pageYOffset < 2476) {
       this.sectionService.setActiveSection('Education')
-    } else if(window.pageYOffset >= 1586 && window.pageYOffset < 2106) {
+    } else if(window.pageYOffset >= 2476) {
       this.sectionService.setActiveSection('Portofolio');
     } 
   }
