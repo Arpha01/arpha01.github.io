@@ -12,4 +12,8 @@ export class ChecksumcheckComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openPage(url: string): void {
+    window.open(url);
+  }
+
 }

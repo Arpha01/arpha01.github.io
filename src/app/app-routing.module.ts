@@ -4,10 +4,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { GeneralLayoutComponent } from './layouts/general-layout/general-layout.component';
 import { AboutLayoutComponent } from './layouts/about-layout/about-layout.component';
 import { AboutComponent } from './pages/about/about.component';
-import { GallerizeComponent } from './pages/gallerize/gallerize.component';
 import { WinnetmeterComponent } from './pages/winnetmeter/winnetmeter.component';
 import { QrcodeComponent } from './pages/qrcode/qrcode.component';
 import { CoronavirusComponent } from './pages/coronavirus/coronavirus.component';
+import { ChecksumcheckComponent } from './pages/checksumcheck/checksumcheck.component';
+import { DonationComponent } from './pages/donation/donation.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,14 @@ const routes: Routes = [
       {
         'path': 'covid-19',
         'component': CoronavirusComponent
+      },
+      {
+        'path': 'projects/checksumcheck',
+        'component': ChecksumcheckComponent
+      },
+      {
+        'path': 'donation',
+        'component': DonationComponent
       }
     ]
   },
@@ -41,10 +50,6 @@ const routes: Routes = [
       {
         'path': 'about',
         'component': AboutComponent
-      },
-      {
-        'path': 'gallerize',
-        'component': GallerizeComponent
       }
     ]
   }

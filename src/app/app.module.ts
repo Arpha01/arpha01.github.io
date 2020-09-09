@@ -20,6 +20,7 @@ import { CoronavirusComponent } from './pages/coronavirus/coronavirus.component'
 import { HttpClientModule } from '@angular/common/http';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { ChecksumcheckComponent } from './pages/checksumcheck/checksumcheck.component';
+import { DonationComponent } from './pages/donation/donation.component';
 
 @Injectable()
 export class MyHammerConfig extends HammerGestureConfig {
@@ -45,7 +46,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     WinnetmeterComponent,
     QrcodeComponent,
     CoronavirusComponent,
-    ChecksumcheckComponent
+    ChecksumcheckComponent,
+    DonationComponent
   ],
   imports: [
     BrowserModule,

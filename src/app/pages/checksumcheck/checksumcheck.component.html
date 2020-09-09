@@ -1,1 +1,124 @@
-<p>checksumcheck works!</p>
+<div class="w-full flex flex-wrap h-auto">
+  <div class="md:w-1/2 lg:w-1/2">
+    <div class="h-full flex flex-col justify-center px-12">
+      <p class="tracking-widest text-gray-600">ChecksumCheck</p>
+      <h1 class="font-bold font-kumbh text-4xl">
+        Check File Checksum
+      </h1>
+      <p class="text-lg text-gray-600 font-kumbh">A software for checking file checksum
+      </p>
+      <div class="flex flex-col py-6 mt-20">
+        <p class="text-gray-600">Available on store</p>
+        <a href="https://www.microsoft.com/en-id/p/wintendev-qrcode-generator/9n0mkg4jm6zg?activetab=pivot:overviewtab"
+          class="self-start flex bg-black shadow text-white rounded px-2 py-2 border mt-10 border-gray-100">
+          <img src="assets/images/microsoft.svg" alt="" class="float-left">
+          <div class="ml-2 text-left">
+            <p class="text-xs">Get it from</p>
+            <p class="text-base font-semibold">Microsoft</p>
+          </div>
+        </a>
+        <a href="https://github.com/WinTenDev/QRCode.Generator/releases/tag/v1.2.0.2"
+          class="mt-5 text-blue-500 transition duration-300 hover:text-blue-800 transform hover:translate-y-1 hover:scale-100">
+          Another version
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center md:w-1/2 lg:w-1/2">
+    <img src="assets/images/checksum.svg" class="w-5/6 mt-2 object-contain" alt="">
+  </div>
+</div>
+<div class="flex flex-wrap px-20 py-32 md:px-24 lg:px-32 justify-center bg-gray-100">
+  <div class="md:w-1/2 lg:w-1/2">
+    <div class="py-10 px-2">
+      <p class="text-blue-500 tracking-widest">Command Line</p>
+      <p class="text-4xl font-bold">Cek Checksum Melalui Console</p>
+      <p class="text-gray-600 font-sans">
+        ChecksumCheck memiliki versi command line, sehingga Anda dapat mengecek checksum file menggunakan 
+        command prompt dan powershell
+      </p>
+      <button class="bg-gray-300 py-2 px-3 rounded-full mt-4">Read more <i class="fas fa-arrow-right ml-2"></i></button>
+    </div>
+  </div>
+  <div class="flex justify-center md:w-1/2 lg:w-1/2">
+    <img src="assets/images/scripts.svg" alt="" class="w-full md:w-2/3 lg:w-2/3">
+  </div>
+</div>
+<div class="flex flex-wrap px-20 py-32 md:px-24 lg:px-32 justify-center bg-white">
+  <div class="flex justify-center md:w-1/2 lg:w-1/2">
+    <img src="assets/images/console.svg" alt="" class="w-full md:w-2/3 lg:w-2/3">
+  </div>
+  <div class="md:w-1/2 lg:w-1/2">
+    <div class="py-10 px-2">
+      <p class="text-blue-500 tracking-widest">Script Console</p>
+      <p class="text-4xl font-bold">Command Untuk Mengecek Checksum File</p>
+      <div class="bg-gray-200 px-4 py-2 rounded">
+        <pre>checksum "filepath" -hashtype</pre>
+      </div>
+      <button class="bg-black hover:bg-gray-700 text-white py-2 px-3 rounded-full mt-8"><i class="fab fa-github"></i> Selengkapnya di dokumentasi</button>
+    </div>
+  </div>
+</div>
+<div class="flex flex-col px-20 py-20 md:px-24 lg:px-32 justify-center bg-gray-100">
+  <h1 class="text-blue-500 tracking-wider text-4xl text-center">Fitur & Dukungan</h1>
+  <div class="flex flex-wrap mt-10">
+    <div class="flex flex-col items-center md:w-1/2 lg:w-1/2">
+      <div class="w-4/5 shadow rounded px-4 py-2 bg-white">
+        <p class="text-blue-500 text-lg py-2">Fitur</p>
+        <hr class="border border-gray-200">
+        <div class="py-2">
+          <ul class="list-disc px-4">
+            <li>Multiple files check</li>
+            <li>Drag and drop files</li>
+            <li>Windows Explorer context menu integration</li>
+            <li>Etc.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center md:w-1/2 lg:w-1/2">
+      <div class="w-4/5 shadow rounded px-4 py-2 bg-white">
+        <p class="text-blue-500 text-lg py-2">Hash yang didukung</p>
+        <hr class="border border-gray-200">
+        <div class="py-2">
+          <ul class="list-disc px-4">
+            <li>MD5</li>
+            <li>SHA1</li>
+            <li>SHA256</li>
+            <li>SHA512</li>
+            <li>CRC32</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="flex flex-col items-center px-20 py-20 md:px-24 lg:px-32 bg-white">
+  <h1 class="text-blue-500 tracking-wider text-4xl text-center">Download</h1>
+  <div class="flex flex-wrap justify-center">
+    <div class="ml-3 mt-10 max-w-sm w-64 rounded-md shadow-md border border-1">
+      <div class="px-6 py-4">
+        <p class="text-xl text-center">Versi GUI</p>
+        <button (click)="openPage('https://github.com/WinTenDev/ChecksumCheck/releases/tag/v1.0')" class="w-full bg-blue-500 hover:bg-blue-700 border-1 text-white font-bold py-2 
+        px-4 rounded-full shadow mt-3">
+          Download
+        </button>
+        <p class="text-gray-500 text-sm text-center mt-1">
+          Windows 7/8.1/10 x86 or x64
+        </p>
+      </div>
+    </div>
+    <div class="ml-3 mt-10 max-w-sm w-64 rounded-md shadow-md border border-1">
+      <div class="px-6 py-4">
+        <p class="text-xl text-center">Versi Command Line</p>
+        <button (click)="openPage('https://github.com/WinTenDev/ChecksumCheck/releases/tag/v1.0')" class="w-full bg-blue-500 hover:bg-blue-700 border-1 text-white font-bold py-2 
+        px-4 rounded-full shadow mt-3">
+          Download
+        </button>
+        <p class="text-gray-500 text-sm text-center mt-1">
+          Windows 7/8.1/10 x86 or x64
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
