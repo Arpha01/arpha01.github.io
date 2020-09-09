@@ -1,0 +1,9 @@
+<svg id="tailwind-css-seeklogo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.804" height="14.282" viewBox="0 0 23.804 14.282">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.028" y1="0.32" x2="1" y2="0.676" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2298bd"/>
+      <stop offset="1" stop-color="#0ed7b5"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_3828" data-name="Path 3828" d="M11.9,0Q7.141,0,5.951,4.761q1.785-2.38,4.166-1.785a5.074,5.074,0,0,1,2.269,1.61,6.87,6.87,0,0,0,5.467,2.555q4.761,0,5.951-4.761-1.785,2.38-4.166,1.785a5.074,5.074,0,0,1-2.269-1.61A6.87,6.87,0,0,0,11.9,0ZM5.951,7.141Q1.19,7.141,0,11.9q1.785-2.38,4.166-1.785a5.074,5.074,0,0,1,2.269,1.61A6.87,6.87,0,0,0,11.9,14.282q4.761,0,5.951-4.761-1.785,2.38-4.166,1.785A5.074,5.074,0,0,1,11.418,9.7,6.87,6.87,0,0,0,5.951,7.141Z" fill="url(#linear-gradient)"/>
+</svg>
