@@ -1,10 +1,10 @@
 module.exports = {
   purge: {
-    // enabled: true,
-    // content: [
-    //   './src/app/**/*.component.html',
-    //   './src/app/**/*.html'
-    // ]
+    enabled: true,
+    content: [
+      './src/app/**/*.component.html',
+      './src/app/**/*.html'
+    ]
   },
   theme: {
     extend: {},
