@@ -1886,6 +1886,10 @@ video {
     margin-right: 1.5rem;
   }
 
+  .md\:mt-10{
+    margin-top: 2.5rem;
+  }
+
   .md\:mr-10{
     margin-right: 2.5rem;
   }
@@ -2089,6 +2093,10 @@ video {
 
   .lg\:mr-6{
     margin-right: 1.5rem;
+  }
+
+  .lg\:mt-10{
+    margin-top: 2.5rem;
   }
 
   .lg\:mr-10{
