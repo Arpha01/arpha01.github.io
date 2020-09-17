@@ -1853,6 +1853,10 @@ video {
     height: 6rem;
   }
 
+  .md\:text-base{
+    font-size: 1rem;
+  }
+
   .md\:m-3{
     margin: 0.75rem;
   }
@@ -2060,6 +2064,10 @@ video {
 
   .lg\:h-24{
     height: 6rem;
+  }
+
+  .lg\:text-base{
+    font-size: 1rem;
   }
 
   .lg\:m-3{

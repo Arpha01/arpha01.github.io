@@ -47,10 +47,10 @@
     </p>
     <div class="w-full flex flex-wrap my-4 md:mx-2 lg:mx-4">
       <div class="w-full md:w-1/2 lg:w-1/2 justify-center">
-        <div class="skill-card mt-4 w-full rounded shadow-md bg-white border border-gray-100 text-left">
-          <h2 class="font-semibold px-6 py-4 text-xl mb-1 text-blue-500">Detail Personal</h2>
+        <div class="skill-card mt-4 w-full rounded px-6 bg-white border border-gray-400 text-left">
+          <h2 class="font-semibold py-4 text-xl mb-1 text-blue-500">Detail Personal</h2>
           <hr class="border border-gray-200">
-          <div class="flex flex-col px-6 py-4 mb-8">
+          <div class="flex flex-col py-4 mb-8">
             <div class="inline my-2">
               <i class="fas fa-map-marker-alt text-gray-700 mr-2"></i><span class="font-semibold">Alamat Tempat tinggal</span>
               <p class="text-sm">JL.IR.H.Juanda(komplek percetakan ALS) Kel. Cipayung Kec. Ciputat, Kota Tangerang Selatan</p>
@@ -83,17 +83,24 @@
               <p class="text-sm">+6282321158479</p>
             </div>
             <div class="inline my-2">
-                <i class="fas fa-user mr-2"></i><span class="font-semibold">Interpersonal Skills</span>
+                <div class="py-2">
+                  <i class="fas fa-user mr-2"></i>
+                  <span class="font-semibold">Interpersonal Skills</span>
+                </div>
+                <hr class="border border-gray-200">
                 <ul class="px-4 list-disc">
                     <li class="py-1">Love writing beautiful 💖, well-optimized code, and always up-to-date about best practice</li>
                     <li class="py-1">Sangat menyukai berbagai hal tentang Teknologi, Sains, dan Astronomi 🚀</li>
                     <li class="py-1">Saya dapat dengan cepat beradaptasi dengan berbagai macam tool, dan lingkungan pengembangan</li>
-                    <li class="py-1">Saya dapat mengoperasikan berbagai sistem operasi berbasis Windows, Linux, maupun MacOS (Karena saya menggunakan ketiganya)</li>
                     <li class="py-1">Mampu memahami konsep dan ide baru dengan cepat dan efisien.</li>
                 </ul>
             </div>
             <div class="inline my-2">
-              <i class="fas fa-desktop mr-2"></i><span class="font-semibold">Aktivitas & Lainnya</span>
+              <div class="py-2">
+                <i class="fas fa-desktop mr-2"></i>
+                <span class="font-semibold">Aktivitas & Lainnya</span>
+              </div>
+              <hr class="border border-gray-200">
               <div class="flex flex-wrap mt-6">
                   <img src="assets/images/winten.jpg" alt="" class="w-12 h-12 rounded-full">
                   <div class="self-center">
@@ -113,11 +120,14 @@
         </div>
       </div>
       <div class="w-full md:w-1/2 lg:w-1/2">
-        <div class="skill-card mt-4 w-full md:w-4/5 lg:w-4/5 rounded shadow-md bg-white border border-gray-100 text-left ml-auto">
-          <h2 class="font-semibold px-6 py-4 text-xl text-blue-500">Skills</h2>
-          <p class="px-6 py-4 font-semibold">Experienced with</p>
+        <div class="skill-card mt-4 px-6 py-4 w-full md:w-4/5 lg:w-4/5 rounded bg-white border border-gray-400 text-left ml-auto">
+          <h2 class="font-semibold text-xl text-blue-500">Skills</h2>
+          <div class="mt-2 py-2">
+            <span class="font-semibold">Experienced with </span>
+            <span class="text-sm text-gray-700">(Recent working with)</span>
+          </div>
           <hr class="border border-gray-200">
-          <div class="flex flex-col px-6 py-4 mb-4">
+          <div class="flex flex-col mb-4">
             <div class="flex my-2">
               <img src="assets/images/skills/laravel.png" alt="" class="w-8 h-8">
               <p class="ml-4 mt-1">Laravel</p>
@@ -139,9 +149,9 @@
                 <p class="ml-4 mt-1">Javascript</p>
             </div>
           </div>
-          <p class="px-6 py-2 font-semibold">Familiar with</p>
+          <p class="py-2 font-semibold">Familiar with</p>
           <hr class="border border-gray-200">
-          <div class="flex flex-col px-6 py-4 mb-4">
+          <div class="flex flex-col mb-4">
             <div class="flex my-2">
                 <img src="assets/images/skills/office.svg" alt="" class="w-8 h-8">
                 <p class="ml-4 mt-1">Microsoft Office</p>
@@ -175,9 +185,9 @@
                 <p class="ml-4 mt-1">TailwindCSS</p>
             </div>
           </div>
-          <p class="px-6 py-2 font-semibold">New</p>
+          <p class="py-2 font-semibold">New</p>
           <hr class="border border-gray-200">
-          <div class="flex flex-col px-6 py-4 mb-4">
+          <div class="flex flex-col py-4 mb-4">
             <div class="flex my-2">
                 <img src="assets/images/skills/nestjs.svg" alt="" class="w-8 h-8">
                 <p class="ml-4 mt-1">NestJS</p>
@@ -229,7 +239,7 @@
   </div>
   <div class="w-full flex mt-12 px-6 border-b border-gray-400">
     <a *ngFor="let tab of Tabs"
-      class="btn-tabitem bg-transparent px-2 py-3 focus:outline-none mr-2 cursor-pointer hover:bg-gray-200"
+      class="btn-tabitem bg-transparent px-2 py-3 focus:outline-none mr-2 cursor-pointer hover:bg-gray-200 text-sm md:text-base lg:text-base"
       (click)="toggleTab(tab.id)" [ngClass]="{ 'active': Tabs[tab.id - 1].toggle }">
       {{ tab.name }}
     </a>
