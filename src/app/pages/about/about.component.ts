@@ -51,10 +51,12 @@ export class AboutComponent implements OnInit {
     if(window.pageYOffset >= 0 && window.pageYOffset < 1876) {
       this.sectionService.setActiveSection('Profile');
     } else if(window.pageYOffset >= 1876 && window.pageYOffset < 2476) {
-      this.sectionService.setActiveSection('Education')
-    } else if(window.pageYOffset >= 2476) {
+      this.sectionService.setActiveSection('Experience')
+    } else if(window.pageYOffset >= 2890 && window.pageYOffset < 3462 ) {
+      this.sectionService.setActiveSection('Education');
+    } else if(window.pageYOffset >= 3462) {
       this.sectionService.setActiveSection('Portofolio');
-    } 
+    }
   }
 
   constructor(private sectionService: SectionService,
