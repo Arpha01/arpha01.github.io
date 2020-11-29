@@ -25,11 +25,7 @@ export class AppComponent implements OnInit {
     this.spinner.show();
 
     this.router.events.subscribe((evt) => {
-      this.navigationInterceptor(evt);
-      if(!(evt instanceof NavigationEnd)) {
-        return;
-      }
-      window.scrollTo(0,0);
+     this.navigationInterceptor(evt);
     })
   }
 
