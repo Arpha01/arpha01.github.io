@@ -190,6 +190,9 @@ OTHER DEALINGS IN THE SOFTWARE.
 ng-gallery
 MIT
 
+ngx-spinner
+MIT
+
 regenerator-runtime
 MIT
 MIT License
