@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { AboutLayoutComponent } from './about-layout.component';
 
@@ -6,7 +6,7 @@ describe('AboutLayoutComponent', () => {
   let component: AboutLayoutComponent;
   let fixture: ComponentFixture<AboutLayoutComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ AboutLayoutComponent ]
     })
