@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { ChecksumcheckComponent } from './pages/checksumcheck/checksumcheck.component';
 import { DonationComponent } from './pages/donation/donation.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @Injectable()
 export class MyHammerConfig extends HammerGestureConfig {
@@ -60,7 +61,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     LightboxModule,
     HammerModule,
     HttpClientModule,
-    NgxDatatableModule
+    NgxDatatableModule,
+    NgxSpinnerModule
   ],
   providers: [
     {
