@@ -9,6 +9,7 @@ import { QrcodeComponent } from './pages/qrcode/qrcode.component';
 import { CoronavirusComponent } from './pages/coronavirus/coronavirus.component';
 import { ChecksumcheckComponent } from './pages/checksumcheck/checksumcheck.component';
 import { DonationComponent } from './pages/donation/donation.component';
+import { WaktushalatComponent } from './pages/waktushalat/waktushalat.component';
 
 
 const routes: Routes = [
@@ -40,6 +41,10 @@ const routes: Routes = [
       {
         'path': 'donation',
         'component': DonationComponent
+      },
+      {
+        'path': 'projects/waktushalat',
+        'component': WaktushalatComponent
       }
     ]
   },

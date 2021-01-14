@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Gallery, ImageItem, GalleryModule, GalleryRef } from 'ng-gallery';
+import { Gallery, ImageItem } from 'ng-gallery';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-gallerize',
@@ -10,21 +11,28 @@ export class GallerizeComponent implements OnInit {
 
   constructor(private gallery: Gallery) { }
 
-  galleryId = 'portofolioGallery';
-  galleryRef: GalleryRef;
   assetsPath: string = `http://${location.host}/assets/images/design`;
-  images: ImageItem[] = [];
+  loading: boolean = true;
+  imagesPath: ImageItem[] = [];
+  myImages = [];
+  
+  onVisible() {
+    //console.log('visible');
+  }
+
+  onLoaded() {
+    this.loading = false;
+  }
 
   ngOnInit(): void {
-    this.galleryRef = this.gallery.ref(this.galleryId);
+    const galleryRef = this.gallery.ref('gallery');
+
     this.gallery.ref('lightbox').setConfig({
       loadingStrategy: 'lazy',
       thumb: false,
     })
 
-    console.log(this.assetsPath);
-
-    this.images = [
+    this.imagesPath = [
       new ImageItem({
         'src': `${this.assetsPath}/waktushalat_welcome_material-min.png`,
       }),
@@ -57,7 +65,8 @@ export class GallerizeComponent implements OnInit {
       }),
     ]
 
-    this.galleryRef.addImage(this.images);
+    galleryRef.addImage(this.imagesPath);
+
   }
 
 }

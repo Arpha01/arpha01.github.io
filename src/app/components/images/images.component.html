@@ -1,0 +1,9 @@
+<div class="relative">
+    <img src="{{imagesrc}}" alt="" class="rounded w-48 h-48 object-cover cursor-pointer" loading="lazy" (load)="onLoaded()">
+    <ng-template [ngIf]="loading">
+      <ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="default" color="#fff" type="ball-clip-rotate"
+        [fullScreen]="false">
+        <p style="color: white"> Loading... </p>
+      </ngx-spinner>
+    </ng-template>
+</div>

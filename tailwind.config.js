@@ -1,20 +1,14 @@
 module.exports = {
-  purge: {
-    enabled: true,
-    content: [
-      './src/app/**/*.component.html',
-      './src/app/**/*.html'
-    ]
-  },
+  purge: [],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {},
     fontFamily: {
-      'nunito': ['Nunito Sans'],
-      'helvetica': ['Helvetica'],
-      'quicksand': ['Quicksand'],
-      'kumbh': ['Kumbh Sans']
+      sans: ['Quicksand', 'sans-serif']
     }
   },
-  variants: {},
+  variants: {
+    extend: {},
+  },
   plugins: [],
 }

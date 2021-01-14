@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, ViewContainerRef, ComponentFactoryResolver, ViewChild } from '@angular/core';
-import { trigger,  style, transition, animate } from '@angular/animations';
+import { trigger,  style, transition, animate, query, group, state } from '@angular/animations';
 import { SectionService } from 'src/app/services/section.service';
 
 @Component({
@@ -8,9 +8,13 @@ import { SectionService } from 'src/app/services/section.service';
   styleUrls: ['./about.component.css'],
   animations: [
     trigger('showHide', [
-      transition('hide <=> show', [
-        style({ transform: 'translateX(-100%)' }),
+      transition('hide => show', [
+        style({ transform: 'translateX(100%)' }),
         animate('400ms ease-out', style({ transform: 'translateX(0%)' }))
+      ]),
+      transition('show => hide', [
+        style({ transform: 'translateX(0%)' }),
+        animate('400ms ease-out', style({ transform: 'translateX(-100%)' }))
       ])
     ])
   ]
@@ -18,6 +22,50 @@ import { SectionService } from 'src/app/services/section.service';
 export class AboutComponent implements OnInit {
 
   @ViewChild('designTab', { read: ViewContainerRef }) designContainer: ViewContainerRef;
+  loading;
+
+  educations = [
+    {
+      schoolName: "SMP Islamiyah Ciputat",
+      expertise: null,
+      since: '2011-2014'
+    },
+    {
+      schoolName: "SMK Islamiyah Ciputat",
+      expertise: 'Teknik Komputer Dan Jaringan',
+      since: '2014-2017'
+    },
+    {
+      schoolName: "Universitas Pamulang",
+      expertise: 'Teknik Informatika',
+      since: '2017-Sekarang'
+    }
+  ];
+
+  experiences = [
+    {
+      place: "Pengajian Pondok Benda Indah",
+      jobTitle: "Freelance",
+      jobPart: "Full Stack Web Developer",
+      duration: "1 Tahun",
+      responsibilities: [
+        'Membuat website SIAKAD dan forum untuk pengajian'
+      ],
+      year: '2018-2019',
+      link: 'http://kbmproject.herokuapp.com'
+    },
+    {
+      place: "Sekolah Swasta",
+      jobTitle: "Freelance",
+      jobPart: "Full Stack Web Developer",
+      duration: "On going",
+      responsibilities: [
+        'Membuat website ujian online untuk sekolah'
+      ],
+      year: '2020-Sekarang',
+      link: 'http://cbtexam.herokuapp.com'
+    }
+  ]
 
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
 
@@ -48,13 +96,13 @@ export class AboutComponent implements OnInit {
 
   @HostListener('window:scroll', ['onWindowScroll($event)'])
   onWindowScroll(event) {
-    if(window.pageYOffset >= 0 && window.pageYOffset < 1876) {
+    if(window.pageYOffset >= 0 && window.pageYOffset < 1700) {
       this.sectionService.setActiveSection('Profile');
-    } else if(window.pageYOffset >= 1876 && window.pageYOffset < 2476) {
+    } else if(window.pageYOffset >= 1700 && window.pageYOffset < 2100) {
       this.sectionService.setActiveSection('Experience')
-    } else if(window.pageYOffset >= 2890 && window.pageYOffset < 3462 ) {
+    } else if(window.pageYOffset >= 2300 && window.pageYOffset < 3000 ) {
       this.sectionService.setActiveSection('Education');
-    } else if(window.pageYOffset >= 3462) {
+    } else if(window.pageYOffset >= 3000) {
       this.sectionService.setActiveSection('Portofolio');
     }
   }
@@ -91,10 +139,9 @@ export class AboutComponent implements OnInit {
   }
 
   async getDesignComponent() {
-    this.designContainer.clear();
+    this.loading = true;
     const { GallerizeComponent } = await import('../gallerize/gallerize.component');
     this.designContainer.createComponent(this.componentFactory.resolveComponentFactory(GallerizeComponent));
   }
-
 
 }

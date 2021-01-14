@@ -1,4 +1,5 @@
-<!-- <div class="flex flex-wrap justify-center px-6" gallerize>
-    <img *ngFor="let image of images" src="{{ image.data.src }}" class="w-12 m-4 object-cover rounded" loading="lazy">
-</div> -->
-<gallery id="portofolioGallery" [items]="images" gallerize></gallery>
+<div class="flex flex-wrap justify-center py-10 image-list" observeVisibility [debounceTime]="500" (visible)="onVisible" id="gallery">
+    <!-- <app-images *ngFor="let image of imagesPath; let i=index;" [imagesrc]="image.src" [lightbox]="i" [attr.imageSrc]="image" [attr.thumbSrc]="image"></app-images> -->
+    <!-- <img *ngFor="let image of imagesPath" src="{{ image.data.src }}" alt="" [attr.imageSrc]="image.data.src"
+    > -->
+</div>

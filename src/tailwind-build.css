@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap');
-
 @import '~animate.css/animate.min';
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap');
 
@@ -13,8 +13,73 @@
 @import '~@swimlane/ngx-datatable/assets/icons.css';
 
 
-@tailwind base;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-@tailwind components;
+.project-content {
+    @apply flex flex-col w-64 bg-white items-center px-8 py-8 h-auto shadow-lg hover:shadow-xl border border-gray-100 rounded m-3;
+}
 
-@tailwind utilities;
+.container-flex-col {
+    @apply flex flex-col w-full h-auto items-center;
+}
+
+.container-flex-row {
+    @apply flex flex-wrap w-full h-auto items-center content-center;
+}
+
+/* Text utility */
+
+.text-title-header {
+    @apply text-3xl mt-10 font-semibold text-gray-800;
+}
+
+.text-title {
+    @apply text-xl;
+}
+
+.text-subtitle {
+    @apply text-lg;
+}
+
+.text-small {
+    @apply text-gray-500 text-sm mt-1;
+}
+
+.border-title {
+    @apply my-2 border-2 border-blue-500 w-32;
+}
+
+.card-education {
+    @apply ml-8 mt-5 w-80 rounded-lg shadow-lg border bg-white;
+}
+
+.card-portfolio {
+    @apply flex flex-col md:m-3 lg:m-3 m-1 bg-white items-center px-6 w-64 py-8 h-auto shadow-lg border border-gray-100 rounded;
+}
+
+.details {
+    @apply text-sm text-gray-900;
+}
+
+.tab-container {
+    @apply flex flex-wrap justify-center items-center;
+}
+
+/* Button */
+.btn {
+    @apply px-3 py-2;
+}
+
+.btn-blue {
+    @apply bg-blue-500 hover:bg-blue-600 text-white shadow-lg;
+}
+
+.btn-outline-blue {
+    @apply border border-blue-500 text-blue-500 rounded hover:border-blue-800 hover:text-blue-800;
+}
+
+.disabled {
+    @apply opacity-50;
+}

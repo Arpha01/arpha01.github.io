@@ -4,6 +4,10 @@
     font-weight: bold;
 }
 
+.btn-tabitem {
+    color: #95a5a6;
+}
+
 .show {
     display: block !important;
 }
