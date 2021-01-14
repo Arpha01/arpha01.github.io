@@ -35,4 +35,8 @@ export class AboutNavbarComponent implements OnInit {
     })
   }
 
+  navigate(link:string): void {
+    window.location.href = link;
+  }
+
 }
