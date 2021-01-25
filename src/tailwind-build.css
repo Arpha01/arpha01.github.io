@@ -6,6 +6,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 @import "~@angular/cdk/overlay-prebuilt.css";
 
 @import '~@swimlane/ngx-datatable/index.css';
@@ -32,7 +34,7 @@
 /* Text utility */
 
 .text-title-header {
-    @apply text-3xl mt-10 font-semibold text-gray-800;
+    @apply text-3xl font-semibold text-gray-800;
 }
 
 .text-title {
@@ -82,4 +84,16 @@
 
 .disabled {
     @apply opacity-50;
+}
+
+.card-profile {
+    @apply w-72 rounded-lg shadow-xl bg-white m-4;
+}
+
+.col-2 {
+    @apply flex flex-col md:w-1/2 lg:w-1/2 md:px-16 lg:px-16 px-10;
+}
+
+.col-2-image {
+    @apply w-full flex md:w-1/2 lg:w-1/2 justify-center items-center;
 }

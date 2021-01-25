@@ -44,12 +44,21 @@ export class AboutComponent implements OnInit {
 
   experiences = [
     {
+      place: "Kementerian Pendidikan",
+      jobTitle: "Praktek Kerja Lapangan",
+      jobPart: "Persuratan",
+      duration: "6 Bulan",
+      responsibilities: [
+        'Mengelola surat dan keperluan kepegawaian'
+      ]
+    },
+    {
       place: "Pengajian Pondok Benda Indah",
       jobTitle: "Freelance",
       jobPart: "Full Stack Web Developer",
       duration: "1 Tahun",
       responsibilities: [
-        'Membuat website SIAKAD dan forum untuk pengajian'
+        'Membuat website SIAKAD dan forum'
       ],
       year: '2018-2019',
       link: 'http://kbmproject.herokuapp.com'
@@ -58,7 +67,7 @@ export class AboutComponent implements OnInit {
       place: "Sekolah Swasta",
       jobTitle: "Freelance",
       jobPart: "Full Stack Web Developer",
-      duration: "On going",
+      duration: "1 Tahun",
       responsibilities: [
         'Membuat website ujian online untuk sekolah'
       ],

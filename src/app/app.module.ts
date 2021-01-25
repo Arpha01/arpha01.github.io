@@ -24,6 +24,7 @@ import { ObserverVisibilityDirective } from './observer-visibility.directive';
 import { WaktushalatComponent } from './pages/waktushalat/waktushalat.component';
 import { ImagesComponent } from './components/images/images.component';
 import { GalleryModule, GALLERY_CONFIG } from 'ng-gallery';
+import { CbtexamComponent } from './pages/cbtexam/cbtexam.component';
 
 @Injectable()
 export class MyHammerConfig extends HammerGestureConfig {
@@ -53,7 +54,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     GallerizeComponent,
     ObserverVisibilityDirective,
     WaktushalatComponent,
-    ImagesComponent
+    ImagesComponent,
+    CbtexamComponent
   ],
   imports: [
     BrowserModule,

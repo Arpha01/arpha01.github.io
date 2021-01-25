@@ -10,6 +10,7 @@ import { CoronavirusComponent } from './pages/coronavirus/coronavirus.component'
 import { ChecksumcheckComponent } from './pages/checksumcheck/checksumcheck.component';
 import { DonationComponent } from './pages/donation/donation.component';
 import { WaktushalatComponent } from './pages/waktushalat/waktushalat.component';
+import { CbtexamComponent } from './pages/cbtexam/cbtexam.component';
 
 
 const routes: Routes = [
@@ -45,6 +46,10 @@ const routes: Routes = [
       {
         'path': 'projects/waktushalat',
         'component': WaktushalatComponent
+      },
+      {
+        'path': 'projects/cbtexam', 
+        'component': CbtexamComponent
       }
     ]
   },

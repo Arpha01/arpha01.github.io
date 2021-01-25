@@ -36,7 +36,7 @@
     <img src="assets/images/back.png" alt="" class="w-full" loading="lazy">
   </div>
 </div>
-<div class="container-flex-col px-12 md:px-24 lg:px-28 bg-white dark:bg-gray-800" id="profile">
+<div class="container-flex-col px-12 md:px-24 lg:px-28 dark:bg-gray-800 py-10" id="profile">
   <h2 class="text-title-header mb-1">About Me</h2>
   <hr class="my-2 border-2 border-blue-500 w-32">
   <img src="assets/images/lowres.jpg" alt="" class="mt-8 rounded-full h-24 w-24 object-cover">
@@ -208,36 +208,24 @@
     </div>
   </div>
 </div>
-<div class="container-flex-col" id="experience" #myexperience>
-  <h2 class="text-title-header">Pengalaman</h2>
-  <hr class="border-title">
-  <div class="flex flex-wrap items-center justify-center my-20">
-    <div class="card-education flex flex-col h-96 mt-10 m-3 px-4 py-4" *ngFor="let experience of experiences">
-      <div class="flex flex-col items-start">
-        <p class="text-sm tracking-wider text-blue-500">{{ experience.jobTitle }}</p>
-        <p class="text-2xl font-bold mt-3">{{ experience.jobPart }}</p>
-        <p class="text-small mb-2">{{ experience.place }}</p>
-        <div class="flex my-2" *ngIf="experience.jobTitle == 'Freelance'">
-          <img src="assets/images/skills/laravel.png" class="w-5 h-5 mr-2" alt="">
-          <img src="assets/images/skills/jquery.svg" class="w-5 h-5 mr-2" alt="">
+<div class="container-flex-col py-10 bg-gray-100" id="experience" #myexperience>
+  <h2 class="text-title-header text-center">Pengalaman</h2>
+  <p class="tracking-widest text-blue-500 mb-6">Pengalaman bekerja dan berkreativitas</p>
+  <div class="w-full flex flex-wrap justify-center">
+    <div class="w-96 flex flex-col justify-center px-4 py-4 m-4 bg-white border border-gray-100 shadow-md rounded-lg" *ngFor="let experience of experiences">
+        <p class="text-2xl font-bold">{{ experience.jobTitle }}</p>
+        <h6 class="text-lg">{{ experience.jobPart }}</h6>
+        <div class="inline-flex">
+          <img src="assets/images/date.svg" alt="" class="w-4">
+          <span class="ml-2">{{ experience.duration }}</span>
         </div>
-        <p class="text-sm" *ngFor="let responsibility of experience.responsibilities">
-          {{ responsibility }}
-        </p>
-        <div class="details">
-          <p class="mt-8">{{ experience.duration }}</p>
-          <p>{{ experience.year }}</p>
-        </div>
-      </div>
-      <div class="h-full flex items-end">
-        <a href="{{ experience.link }}" target="_blank" class="btn btn-blue rounded">
-          Live Preview <i class="fas fa-external-link-alt ml-1"></i>
-        </a>
-      </div>
+        <p class="text-lg">{{ experience.place }}</p>
+        <p class="text-sm text-gray-500">{{ experience.responsibilities[0] }}</p>
+        <a *ngIf="experience.link" href="{{ experience.link }}" class="btn btn-blue mt-2 self-start rounded">Preview</a>
     </div>
   </div>
 </div>
-<div class="container-flex-col bg-gray-100" id="education" #myeducation>
+<div class="container-flex-col py-10" id="education" #myeducation>
   <h2 class="text-title-header">Pendidikan</h2>
   <hr class="border-title">
   <div class="w-full flex flex-wrap items-center justify-center">
@@ -247,7 +235,7 @@
     <div class="container-flex-col mb-10 md:mb-0 lg:mb-0 md:w-1/2 lg:w-1/2 justify-center">
       <div class="card-education rounded-lg self-center" *ngFor="let education of educations">
         <div class="px-4 py-4 items-center">
-          <p class="text-title">{{ education.schoolName }}</p>
+          <p class="text-title font-semibold">{{ education.schoolName }}</p>
           <p class="text-base">{{ education.expertise }}</p>
           <p class="text-small">
             {{ education.since }}

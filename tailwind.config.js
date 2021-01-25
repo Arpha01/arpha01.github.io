@@ -9,7 +9,10 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ['Quicksand', 'sans-serif']
+      sans: ['Quicksand', 'sans-serif'],
+      sf: ['-apple-system', 'system-ui', 'BlinkMacSystemFont'],
+      opensans: ['Open Sans', 'sans-serif'],
+      kumbh: ['Kumbh Sans', 'sans-serif']
     }
   },
   variants: {
