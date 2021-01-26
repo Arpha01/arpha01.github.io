@@ -38,6 +38,9 @@ MIT
 @angular/router
 MIT
 
+@angular/service-worker
+MIT
+
 @swimlane/ngx-datatable
 MIT
 (The MIT License)
