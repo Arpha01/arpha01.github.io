@@ -25,6 +25,8 @@ import { WaktushalatComponent } from './pages/waktushalat/waktushalat.component'
 import { ImagesComponent } from './components/images/images.component';
 import { GalleryModule, GALLERY_CONFIG } from 'ng-gallery';
 import { CbtexamComponent } from './pages/cbtexam/cbtexam.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @Injectable()
 export class MyHammerConfig extends HammerGestureConfig {
@@ -65,7 +67,12 @@ export class MyHammerConfig extends HammerGestureConfig {
     HttpClientModule,
     NgxDatatableModule,
     NgxSpinnerModule,
-    GalleryModule
+    GalleryModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      registrationStrategy: 'registerImmediately',
+    }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     {

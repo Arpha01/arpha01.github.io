@@ -97,3 +97,7 @@
 .col-2-image {
     @apply w-full flex md:w-1/2 lg:w-1/2 justify-center items-center;
 }
+
+.responsive-padding {
+    @apply md:px-16 lg:px-16 px-10;
+}

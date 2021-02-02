@@ -1907,6 +1907,25 @@ video {
   }
 }
 
+.responsive-padding {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+@media (min-width: 768px){
+  .responsive-padding{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .responsive-padding{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:hidden{
     display: none;
@@ -2020,6 +2039,11 @@ video {
   .md\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .md\:px-20{
@@ -2222,6 +2246,11 @@ video {
   .lg\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .lg\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .lg\:px-20{
