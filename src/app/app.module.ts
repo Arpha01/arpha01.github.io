@@ -27,6 +27,7 @@ import { GalleryModule, GALLERY_CONFIG } from 'ng-gallery';
 import { CbtexamComponent } from './pages/cbtexam/cbtexam.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { ModalComponent } from './components/modal/modal.component';
 
 @Injectable()
 export class MyHammerConfig extends HammerGestureConfig {
@@ -57,7 +58,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     ObserverVisibilityDirective,
     WaktushalatComponent,
     ImagesComponent,
-    CbtexamComponent
+    CbtexamComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

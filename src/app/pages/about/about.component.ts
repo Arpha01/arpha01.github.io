@@ -67,7 +67,7 @@ export class AboutComponent implements OnInit {
       place: "Sekolah Swasta",
       jobTitle: "Freelance",
       jobPart: "Full Stack Web Developer",
-      duration: "1 Tahun",
+      duration: "5 Bulan",
       responsibilities: [
         'Membuat website ujian online untuk sekolah'
       ],
@@ -76,7 +76,6 @@ export class AboutComponent implements OnInit {
     }
   ]
 
-  SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
 
   activeIndex: number = 0;
 
@@ -122,15 +121,6 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
-  swipe(event, currentIndex = 1) {
-    
-    if(event.type == this.SWIPE_ACTION.LEFT) {
-      currentIndex == this.Tabs.length  ? this.toggleTab(1) : this.toggleTab(currentIndex + 1);
-    } else if(event.type == this.SWIPE_ACTION.RIGHT) {
-      currentIndex == 1 ? this.toggleTab(this.Tabs.length) : this.toggleTab(currentIndex - 1);   
-    }
-  }
 
   toggleTab(id: number): void {
     let activeTab = this.Tabs.find(e => e.id == id);

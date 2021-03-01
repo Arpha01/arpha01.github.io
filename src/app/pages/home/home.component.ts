@@ -1,5 +1,4 @@
 import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
-import { PwaService } from 'src/app/services/pwa.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +7,7 @@ import { PwaService } from 'src/app/services/pwa.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public Pwa: PwaService) { }
+  constructor() { }
 
   @ViewChild('windows') windowsCard: ElementRef;
   @ViewChild('android') androidCard: ElementRef;
@@ -33,10 +32,6 @@ export class HomeComponent implements OnInit {
     }
 
   ngOnInit(): void {
-  }
-
-  installPwa(): void {
-    this.Pwa.promptEvent.prompt();
   }
   
 

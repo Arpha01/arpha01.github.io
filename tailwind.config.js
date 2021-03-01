@@ -12,11 +12,12 @@ module.exports = {
       sans: ['Quicksand', 'sans-serif'],
       sf: ['-apple-system', 'system-ui', 'BlinkMacSystemFont'],
       opensans: ['Open Sans', 'sans-serif'],
-      kumbh: ['Kumbh Sans', 'sans-serif']
+      dmsans: ['DM Sans', 'sans-serif']
     }
   },
   variants: {
     extend: {},
+    backgroundColor: ({ after }) => after(['disabled'])
   },
   plugins: [],
 }

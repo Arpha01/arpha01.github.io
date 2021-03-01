@@ -252,13 +252,13 @@
   </div>
   <div class="w-full flex flex-wrap mt-12 px-6 border-b border-gray-400">
     <button *ngFor="let tab of Tabs"
-      class="btn-tabitem bg-transparent px-2 py-3 focus:outline-none mr-2 cursor-pointer hover:bg-gray-200 text-sm md:text-base lg:text-base"
+      class="btn-tabitem bg-transparent px-2 py-3 focus:outline-none mr-2 
+      cursor-pointer hover:bg-gray-200 text-sm md:text-base lg:text-base"
       (click)="toggleTab(tab.id)" [ngClass]="{ 'active': Tabs[tab.id - 1].toggle }">
       {{ tab.name }}
     </button>
   </div>
-  <div class="flex flex-wrap bg-gray-100 justify-center h-full py-16 overflow-hidden" (swiperight)="swipe($event, activeIndex)"
-    (swipeleft)="swipe($event, activeIndex)">
+  <div class="flex flex-wrap bg-gray-100 justify-center h-full py-16 overflow-hidden">
     <div class="flex flex-wrap justify-center items-center" [ngClass]="{ 'hidden': !Tabs[0].toggle }" [@showHide]="Tabs[0].toggle ? 'show' : 'hide'">
       <div class="card-portfolio">
         <div class="flex">
@@ -269,7 +269,7 @@
           <p class="text-gray-600 text-sm">Email: admin@mail.com</p>
           <p class="text-gray-600 mb-4 text-sm">Password: admin123</p>
           <a href="http://kbmproject.herokuapp.com/admin/login" target="_blank" class="btn btn-outline-blue">
-            Live Demo
+            Project Details
           </a>
         </div>
       </div>
@@ -294,7 +294,7 @@
         <div class="mt-4 text-center">
           <p class="text-gray-600 text-sm">Email: admin@mail.com</p>
           <p class="text-gray-600 mb-4 text-sm">Password: admin123</p>
-          <a href="http://cbtexam.herokuapp.com" target="_blank" class="btn btn-outline-blue">
+          <a routerLink="/projects/cbtexam" target="_blank" class="btn btn-outline-blue">
             Live Demo
           </a>
         </div>
@@ -310,8 +310,8 @@
         </div>
         <div class="mt-4 text-center">
           <p class="text-gray-600 mb-8 text-sm">Untuk semua versi Windows</p>
-          <a href="https://github.com/WinTenDev/WinNetMeter/releases" target="_blank" class="btn btn-outline-blue">
-            Download
+          <a routerLink="/projects/winnetmeter" target="_blank" class="btn btn-outline-blue">
+            Detail
           </a>
         </div>
       </div>
@@ -322,8 +322,8 @@
         </div>
         <div class="mt-4 text-center">
           <p class="text-gray-600 mb-8 text-sm">Untuk semua versi Windows</p>
-          <a href="https://github.com/WinTenDev/QRCode.Generator/releases" target="_blank" class="btn btn-outline-blue">
-            Download
+          <a routerLink="/projects/qrcode" target="_blank" class="btn btn-outline-blue">
+            Detail
           </a>
         </div>
       </div>
@@ -334,7 +334,7 @@
         </div>
         <div class="mt-4 text-center">
           <p class="text-gray-600 mb-8 text-sm">Untuk semua versi Windows</p>
-          <a href="https://github.com/WinTenDev/ChecksumCheck/releases" target="_blank" class="btn btn-outline-blue">
+          <a routerLink="/projects/checksumcheck" target="_blank" class="btn btn-outline-blue">
             Download
           </a>
         </div>
