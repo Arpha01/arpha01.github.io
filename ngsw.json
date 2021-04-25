@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1619371600787,
+  "timestamp": 1619371882772,
   "index": "https://arpha01.github.io/index.html",
   "assetGroups": [
     {
@@ -11,17 +11,17 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://arpha01.github.io/5-es2015.d2164bdf1fddb053821f.js",
-        "https://arpha01.github.io/5-es5.d2164bdf1fddb053821f.js",
+        "https://arpha01.github.io/5-es2015.be1c757d8e2fc918eaaf.js",
+        "https://arpha01.github.io/5-es5.be1c757d8e2fc918eaaf.js",
         "https://arpha01.github.io/favicon.ico",
         "https://arpha01.github.io/index.html",
-        "https://arpha01.github.io/main-es2015.b3f4cee66d9ce60aa398.js",
-        "https://arpha01.github.io/main-es5.b3f4cee66d9ce60aa398.js",
+        "https://arpha01.github.io/main-es2015.d6e66cff6af71e8ec29c.js",
+        "https://arpha01.github.io/main-es5.d6e66cff6af71e8ec29c.js",
         "https://arpha01.github.io/manifest.webmanifest",
         "https://arpha01.github.io/polyfills-es2015.8efe633f8934637015d4.js",
         "https://arpha01.github.io/polyfills-es5.7d306c69cd53c603c407.js",
-        "https://arpha01.github.io/runtime-es2015.d6ee3c8e348e364bae9e.js",
-        "https://arpha01.github.io/runtime-es5.d6ee3c8e348e364bae9e.js",
+        "https://arpha01.github.io/runtime-es2015.0640d2953f3baedd76a8.js",
+        "https://arpha01.github.io/runtime-es5.0640d2953f3baedd76a8.js",
         "https://arpha01.github.io/styles.eb61c551b3d3cd70be6a.css"
       ],
       "patterns": []
@@ -199,8 +199,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://arpha01.github.io/5-es2015.d2164bdf1fddb053821f.js": "8d263bad915256ba8989f6fd51dedeed4c3fe11b",
-    "https://arpha01.github.io/5-es5.d2164bdf1fddb053821f.js": "bc0b432635aef447116104b4c98fbece1c933a21",
+    "https://arpha01.github.io/5-es2015.be1c757d8e2fc918eaaf.js": "8d263bad915256ba8989f6fd51dedeed4c3fe11b",
+    "https://arpha01.github.io/5-es5.be1c757d8e2fc918eaaf.js": "bc0b432635aef447116104b4c98fbece1c933a21",
     "https://arpha01.github.io/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "https://arpha01.github.io/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "https://arpha01.github.io/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -361,14 +361,14 @@
     "https://arpha01.github.io/data-table.7eda0c04830dac128c76.svg": "f1880710c0888c2cbc32311ca20bc3950e38e274",
     "https://arpha01.github.io/data-table.93be7e0fc94594d266a2.ttf": "5c23a1ceb1b1d37844a864c02cd97b145e6243dd",
     "https://arpha01.github.io/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://arpha01.github.io/index.html": "f18e5dd4b1697a33ae0113cbbc232b597ecc673d",
-    "https://arpha01.github.io/main-es2015.b3f4cee66d9ce60aa398.js": "6bcbe6bef0d9d989936603f2e6f9f233e6466f65",
-    "https://arpha01.github.io/main-es5.b3f4cee66d9ce60aa398.js": "9c3959b8af59c1f11969b2a203832ca2314180b1",
+    "https://arpha01.github.io/index.html": "e225b027a857c9d3cdff0d6c0908a9cf8abfd652",
+    "https://arpha01.github.io/main-es2015.d6e66cff6af71e8ec29c.js": "92d7329833d74bf5aae034e1b89781de2013836a",
+    "https://arpha01.github.io/main-es5.d6e66cff6af71e8ec29c.js": "d30db0d39c48c8a6bfea8820698b4ed0ffcac40e",
     "https://arpha01.github.io/manifest.webmanifest": "e78de7b91c1cdacd139ea1af1fba8f0e6a64e9e2",
     "https://arpha01.github.io/polyfills-es2015.8efe633f8934637015d4.js": "65c537467564ee0ba776b629f71ed3413413a7cb",
     "https://arpha01.github.io/polyfills-es5.7d306c69cd53c603c407.js": "214f4b46e6da9fadd1fae2439f1791ee1ad0f563",
-    "https://arpha01.github.io/runtime-es2015.d6ee3c8e348e364bae9e.js": "97dab2a0dfe59864761a31f58c5f5bd102ba3da1",
-    "https://arpha01.github.io/runtime-es5.d6ee3c8e348e364bae9e.js": "32e502832cd0ae1dba3c7dfb60fe9d6826e4f60d",
+    "https://arpha01.github.io/runtime-es2015.0640d2953f3baedd76a8.js": "e848f968149e30154887044570b58b03475e344d",
+    "https://arpha01.github.io/runtime-es5.0640d2953f3baedd76a8.js": "efdb5da661fec88c312bd7ca9c83feb4ef8ee9f6",
     "https://arpha01.github.io/styles.eb61c551b3d3cd70be6a.css": "7cdc6d3afd907aee7e4e0179aa3ce12e568f3878"
   },
   "navigationUrls": [
