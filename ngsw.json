@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1614965293001,
+  "timestamp": 1619370450553,
   "index": "https://arpha01.github.io/index.html",
   "assetGroups": [
     {
@@ -15,14 +15,14 @@
         "https://arpha01.github.io/5-es5.d2164bdf1fddb053821f.js",
         "https://arpha01.github.io/favicon.ico",
         "https://arpha01.github.io/index.html",
-        "https://arpha01.github.io/main-es2015.6e1b281ae16193102b74.js",
-        "https://arpha01.github.io/main-es5.6e1b281ae16193102b74.js",
+        "https://arpha01.github.io/main-es2015.dd5a5b2211ae54c969ba.js",
+        "https://arpha01.github.io/main-es5.dd5a5b2211ae54c969ba.js",
         "https://arpha01.github.io/manifest.webmanifest",
         "https://arpha01.github.io/polyfills-es2015.8efe633f8934637015d4.js",
         "https://arpha01.github.io/polyfills-es5.7d306c69cd53c603c407.js",
         "https://arpha01.github.io/runtime-es2015.d6ee3c8e348e364bae9e.js",
         "https://arpha01.github.io/runtime-es5.d6ee3c8e348e364bae9e.js",
-        "https://arpha01.github.io/styles.2449b9cf75e96d4a4ed0.css"
+        "https://arpha01.github.io/styles.eb61c551b3d3cd70be6a.css"
       ],
       "patterns": []
     },
@@ -53,6 +53,7 @@
         "https://arpha01.github.io/assets/images/apple.svg",
         "https://arpha01.github.io/assets/images/applogo/recipe.svg",
         "https://arpha01.github.io/assets/images/applogo/ulearn.svg",
+        "https://arpha01.github.io/assets/images/astproduction.png",
         "https://arpha01.github.io/assets/images/back.jpg",
         "https://arpha01.github.io/assets/images/back.png",
         "https://arpha01.github.io/assets/images/back.svg",
@@ -219,6 +220,7 @@
     "https://arpha01.github.io/assets/images/apple.svg": "50500fe7e82514c22ae75fd02c919d08020b849c",
     "https://arpha01.github.io/assets/images/applogo/recipe.svg": "14ecbee57069b6b12051adfce3831d7644dfebf1",
     "https://arpha01.github.io/assets/images/applogo/ulearn.svg": "414347ea36f3336662a97b6e341586a8bd2015d5",
+    "https://arpha01.github.io/assets/images/astproduction.png": "700a5f79735b39874d802d6024bd267b95044f66",
     "https://arpha01.github.io/assets/images/back.jpg": "0fd0b27916e434b7438c85266fbe6a3d552e48ef",
     "https://arpha01.github.io/assets/images/back.png": "b3514fd691de8f912f0350467f61eeafec575e9d",
     "https://arpha01.github.io/assets/images/back.svg": "e388282fe38b5c7fc08950d0b5ab7aed3e317011",
@@ -359,15 +361,15 @@
     "https://arpha01.github.io/data-table.7eda0c04830dac128c76.svg": "f1880710c0888c2cbc32311ca20bc3950e38e274",
     "https://arpha01.github.io/data-table.93be7e0fc94594d266a2.ttf": "5c23a1ceb1b1d37844a864c02cd97b145e6243dd",
     "https://arpha01.github.io/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://arpha01.github.io/index.html": "36d2287a5d787c6c32d0d1060967059b6eda6d57",
-    "https://arpha01.github.io/main-es2015.6e1b281ae16193102b74.js": "d5f157b9c54eb8f6e0854b3feade324e5ee3cc4b",
-    "https://arpha01.github.io/main-es5.6e1b281ae16193102b74.js": "9a49173a1de2c9a47ade69855a6c99090d641e98",
+    "https://arpha01.github.io/index.html": "19fb9f25d3971374bbb1e62df7006b6d2a98dbf8",
+    "https://arpha01.github.io/main-es2015.dd5a5b2211ae54c969ba.js": "298c32f675214023a1c5174569d6c9afdaee09da",
+    "https://arpha01.github.io/main-es5.dd5a5b2211ae54c969ba.js": "cef4dbc02ae835a77e7f52c78a6272beceed0e7b",
     "https://arpha01.github.io/manifest.webmanifest": "e78de7b91c1cdacd139ea1af1fba8f0e6a64e9e2",
     "https://arpha01.github.io/polyfills-es2015.8efe633f8934637015d4.js": "65c537467564ee0ba776b629f71ed3413413a7cb",
     "https://arpha01.github.io/polyfills-es5.7d306c69cd53c603c407.js": "214f4b46e6da9fadd1fae2439f1791ee1ad0f563",
     "https://arpha01.github.io/runtime-es2015.d6ee3c8e348e364bae9e.js": "97dab2a0dfe59864761a31f58c5f5bd102ba3da1",
     "https://arpha01.github.io/runtime-es5.d6ee3c8e348e364bae9e.js": "32e502832cd0ae1dba3c7dfb60fe9d6826e4f60d",
-    "https://arpha01.github.io/styles.2449b9cf75e96d4a4ed0.css": "2eb64b206edee6a61bc3235d22ae65fff4c52e63"
+    "https://arpha01.github.io/styles.eb61c551b3d3cd70be6a.css": "7cdc6d3afd907aee7e4e0179aa3ce12e568f3878"
   },
   "navigationUrls": [
     {
