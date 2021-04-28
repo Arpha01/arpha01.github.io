@@ -214,14 +214,13 @@
   <div class="w-full flex flex-wrap justify-center">
     <div class="w-96 flex flex-col justify-center px-4 py-4 m-4 bg-white border border-gray-100 shadow-md rounded-lg" *ngFor="let experience of experiences">
         <p class="text-2xl font-bold">{{ experience.jobTitle }}</p>
-        <h6 class="text-lg">{{ experience.jobPart }}</h6>
+        <h6>{{ experience.jobPart }}</h6>
+        <p class="mt-2">{{ experience.place }}</p>
         <div class="inline-flex">
           <img src="assets/images/date.svg" alt="" class="w-4">
-          <span class="ml-2">{{ experience.duration }}</span>
+          <span class="ml-2 text-sm">{{ experience.year }}</span>
         </div>
-        <p class="text-lg">{{ experience.place }}</p>
         <p class="text-sm text-gray-500">{{ experience.responsibilities[0] }}</p>
-        <a *ngIf="experience.link" href="{{ experience.link }}" class="btn btn-blue mt-2 self-start rounded">Preview</a>
     </div>
   </div>
 </div>
@@ -268,8 +267,8 @@
         <div class="mt-4 text-center">
           <p class="text-gray-600 text-sm">Email: admin@mail.com</p>
           <p class="text-gray-600 mb-4 text-sm">Password: admin123</p>
-          <a href="http://kbmproject.herokuapp.com/admin/login" target="_blank" class="btn btn-outline-blue">
-            Project Details
+          <a href="https://kbmproject.herokuapp.com/admin/login" target="_blank" class="btn btn-outline-blue rounded text-sm">
+            Preview <i class="fas fa-external-link-alt"></i> 
           </a>
         </div>
       </div>
@@ -281,8 +280,8 @@
         <div class="mt-4 text-center">
           <p class="text-gray-600 text-sm">Email: admin@mail.com</p>
           <p class="text-gray-600 mb-4 text-sm">Password: admin123</p>
-          <a href="http://ppdb-smk.herokuapp.com" target="_blank" class="btn btn-outline-blue">
-            Live Demo
+          <a href="https://ppdb-smk.herokuapp.com" target="_blank" class="btn btn-outline-blue rounded text-sm">
+            Preview <i class="fas fa-external-link-alt"></i> 
           </a>
         </div>
       </div>
@@ -292,10 +291,22 @@
           <p class="px-2 mt-2">CBT-Exam</p>
         </div>
         <div class="mt-4 text-center">
-          <p class="text-gray-600 text-sm">Email: admin@mail.com</p>
+          <p class="text-gray-600 text-sm">Email: admin@cbtexam.com</p>
           <p class="text-gray-600 mb-4 text-sm">Password: admin123</p>
-          <a routerLink="/projects/cbtexam" target="_blank" class="btn btn-outline-blue">
-            Live Demo
+          <a routerLink="/projects/cbtexam" target="_blank" class="btn btn-outline-blue rounded text-sm">
+            Preview <i class="fas fa-external-link-alt"></i> 
+          </a>
+        </div>
+      </div>
+      <div class="card-portfolio">
+        <div class="flex">
+          <img src="assets/images/astproduction.png" alt="" width="35" class="float-left">
+          <p class="px-2 mt-2">AstProduction</p>
+        </div>
+        <div class="mt-4 text-center">
+          <p class="text-gray-600 text-sm mb-4">Company profile creative agency</p>
+          <a href="https://astproduction.com" target="_blank" class="btn btn-outline-blue rounded text-sm">
+            Preview <i class="fas fa-external-link-alt"></i> 
           </a>
         </div>
       </div>
@@ -310,8 +321,8 @@
         </div>
         <div class="mt-4 text-center">
           <p class="text-gray-600 mb-8 text-sm">Untuk semua versi Windows</p>
-          <a routerLink="/projects/winnetmeter" target="_blank" class="btn btn-outline-blue">
-            Detail
+          <a routerLink="/projects/winnetmeter" target="_blank" class="btn btn-outline-blue rounded text-sm">
+            Preview <i class="fas fa-external-link-alt"></i> 
           </a>
         </div>
       </div>
@@ -322,8 +333,8 @@
         </div>
         <div class="mt-4 text-center">
           <p class="text-gray-600 mb-8 text-sm">Untuk semua versi Windows</p>
-          <a routerLink="/projects/qrcode" target="_blank" class="btn btn-outline-blue">
-            Detail
+          <a routerLink="/projects/qrcode" target="_blank" class="btn btn-outline-blue rounded text-sm">
+            Preview <i class="fas fa-external-link-alt"></i> 
           </a>
         </div>
       </div>
@@ -334,8 +345,8 @@
         </div>
         <div class="mt-4 text-center">
           <p class="text-gray-600 mb-8 text-sm">Untuk semua versi Windows</p>
-          <a routerLink="/projects/checksumcheck" target="_blank" class="btn btn-outline-blue">
-            Download
+          <a routerLink="/projects/checksumcheck" target="_blank" class="btn btn-outline-blue rounded text-sm">
+            Preview <i class="fas fa-external-link-alt"></i> 
           </a>
         </div>
       </div>
@@ -346,7 +357,9 @@
         </div>
         <div class="mt-4 text-center">
           <p class="text-gray-600 mb-8 text-sm">Untuk semua versi Windows</p>
-          <a href="#" target="_blank" class="btn btn-outline-blue disabled">Coming soon</a>
+          <a routerLink="/" target="_blank" class="btn btn-outline-blue rounded text-sm">
+            Preview <i class="fas fa-external-link-alt"></i> 
+          </a>
         </div>
       </div>
     </div>
@@ -354,22 +367,10 @@
     </div>
     <div class="flex flex-wrap justify-center" [ngClass]="{ 'hidden': !Tabs[3].toggle }" [@showHide]="Tabs[3].toggle ? 'show' : 'hide'">
       <div class="card-portfolio">
-        <img src="assets/images/cbt_logo_only.svg" alt="" width="35" class="float-left">
-        <p class="px-2 mt-2">CBT-Exam</p>
-        <p class="text-xs text-center text-gray-700">Ujian Berbasis Komputer</p>
-        <p class="text-gray-600 my-4 text-center mb-4 text-sm">Status : <span class="text-green-500">Ongoing</span>
-        </p>
-        <div class="flex flex-wrap justify-center">
-          <img src="assets/images/skills/laravel.png" class="w-8 h-8 mx-2">
-          <img src="assets/images/skills/mysql.svg" class="w-8 h-8 mx-2">
-        </div>
-      </div>
-      <div class="card-portfolio">
         <img src="assets/images/tutwuri.png" alt="" width="35" class="float-left">
         <p class="px-2 mt-2">PPDB Project</p>
         <p class="text-xs text-center text-gray-700">Aplikasi pendaftaran murid baru di sekolah</p>
-        <p class="text-gray-600 my-4 text-center mb-4 text-sm">Status : <span class="text-green-500">Alpha
-            Released</span></p>
+        <p class="text-gray-600 my-4 text-center mb-4 text-sm">Status : <span class="text-red-500">Discontinued</span></p>
         <div class="flex flex-wrap justify-center">
           <img src="assets/images/skills/laravel.png" class="w-8 h-8 mx-2">
           <img src="assets/images/skills/livewire.png" class="w-8 h-8 mx-2">
@@ -392,7 +393,7 @@
         <img src="assets/images/applogo/recipe.svg" alt="" width="35" class="float-left">
         <p class="px-2 mt-2">Recipe Masakan</p>
         <p class="text-xs text-center text-gray-700">Sebuah website kumpulan resep makanan</p>
-        <p class="text-gray-600 my-4 text-center mb-4 text-sm">Status : <span class="text-yellow-500">Ongoing</span></p>
+        <p class="text-gray-600 my-4 text-center mb-4 text-sm">Status : <span class="text-yellow-500">Pending</span></p>
         <div class="flex flex-wrap justify-center">
           <img src="assets/images/skills/nestjs.svg" class="w-8 h-8 mx-2">
           <img src="assets/images/skills/angular.svg" class="w-8 h-8 mx-2">
@@ -403,7 +404,7 @@
         <img src="assets/images/waktushalat_logo.jpg" alt="" width="35" class="float-left">
         <p class="px-2 mt-2">WaktuShalat</p>
         <p class="text-xs text-center text-gray-700">Aplikasi sebagai sarana pengingat ibadah</p>
-        <p class="text-gray-600 my-4 text-center mb-4 text-sm">Status : <span class="text-yellow-500">Ongoing</span></p>
+        <p class="text-gray-600 my-4 text-center mb-4 text-sm">Status : <span class="text-green-500">Source released</span></p>
         <div class="flex flex-wrap justify-center">
           <img src="assets/images/skills/csharp.svg" class="w-8 h-8 mx-2">
           <img src="assets/images/skills/sqlite.svg" class="w-8 h-8 mx-2">

@@ -47,7 +47,8 @@ export class AboutComponent implements OnInit {
       place: "Kementerian Pendidikan",
       jobTitle: "Praktek Kerja Lapangan",
       jobPart: "Persuratan",
-      duration: "6 Bulan",
+      duration: "2015",
+      year: "2015",
       responsibilities: [
         'Mengelola surat dan keperluan kepegawaian'
       ]
@@ -71,7 +72,7 @@ export class AboutComponent implements OnInit {
       responsibilities: [
         'Membuat website ujian online untuk sekolah'
       ],
-      year: '2020-Sekarang',
+      year: '21 Januari 2021 - 20 April 2021',
       link: 'http://cbtexam.herokuapp.com'
     }
   ]
@@ -97,7 +98,7 @@ export class AboutComponent implements OnInit {
     },
     {
       'id': 4,
-      'name': 'Ongoing Project',
+      'name': 'Proyek Iseng',
       'toggle': false
     }
   ];

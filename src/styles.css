@@ -820,8 +820,8 @@ video {
   font-family: Quicksand, sans-serif;
 }
 
-.font-sf{
-  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+.font-dmsans{
+  font-family: DM Sans, sans-serif;
 }
 
 .font-semibold{
@@ -1400,6 +1400,11 @@ video {
 .text-gray-900{
   --tw-text-opacity: 1;
   color: rgba(17, 24, 39, var(--tw-text-opacity));
+}
+
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgba(239, 68, 68, var(--tw-text-opacity));
 }
 
 .text-yellow-500{

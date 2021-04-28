@@ -28,6 +28,7 @@ import { CbtexamComponent } from './pages/cbtexam/cbtexam.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { ModalComponent } from './components/modal/modal.component';
+import { CardPortofolioComponent } from './components/card-portofolio/card-portofolio.component';
 
 @Injectable()
 export class MyHammerConfig extends HammerGestureConfig {
@@ -59,7 +60,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     WaktushalatComponent,
     ImagesComponent,
     CbtexamComponent,
-    ModalComponent
+    ModalComponent,
+    CardPortofolioComponent
   ],
   imports: [
     BrowserModule,
